@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between; 
+  /* border: 2px solid red; */
+  position:sticky;
+  top: 0;
+  z-index: 10;
+  height: 70px;
+}
+.header_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    margin-left: 20px;
+    
+}
+.header_left .youtubeicon{
+    width: 60px; 
+    /* margin: 2px; */
+    /* padding: auto;  */
+}
+.header_left i{
+    font-size: 30px;
+    margin: 3px;
+}
+.header_center form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+}
+.header_center input{
+    width: 400px;
+    height: 4vh;
+    padding: 5px;
+}
+.header_center button{
+    /* border: 3px solid blue; */
+    margin: 2px 0px 0px 0px;
+    font-size: 5px;
+}
+.header_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 30px; */margin-right: 15px;
+    padding: 2px;
+}
+.header_right i{
+    width: 30px;
+    height: 20px;
+    font-size: 25px ;
+}
+main{
+    height: 100vh;
+    /* background: rebeccapurple; */
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.content{
+    /* background-color: purple; */
+    width: calc(100vw - 250px);
+} 
+.side_bar {
+    height: 100%;
+    width: 250px;
+    background-color: pink;
+    border: 1px solid red;
+  }
+  .videos {
+    background: #f9f9f9;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+  .video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .thumbnail {
+    display: flex;
+    height: 180px;
+    width: 100%;
+  }
+  .thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .video-details {
+    display: flex;
+    gap: 10px;
+  }
+  .author img {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .video {
+    width: 310px;
+    margin-bottom: 30px;
+  }
+  .recomend {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(3, 3, 3);
+    padding: 10px;
+  }
+  .video-title p,
+  span {
+    color: rgb(96, 96, 96);
+  }
+  .sidebar {
+    height: 100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+.sidebar_categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.sidebar_category {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px ;
+}
+.material-icons {
+    color: rgb(96, 96, 96);
+}
+
+.sidebar_category i{
+    padding-right: 10px;
+}
+
